@@ -1,0 +1,130 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #fff;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  position: relative;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+}
+
+.calculator {
+  background: #D1C4E9;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.30);
+  width: 90vw;
+  max-width: 400px;
+}
+
+#display {
+  width: 100%;
+  height: 70px;
+  font-size: 32px;
+  text-align: right;
+  padding: 12px 18px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 6px;
+  background: #F3E5F5;
+  color: #5D3A99;
+  box-sizing: border-box;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+button {
+  font-size: 18px;
+  padding: 15px;
+  border: none;
+  background: #B39DDB;
+  color: #311B92;
+  cursor: pointer;
+  transition: background 0.2s;
+  border-radius: 50%;
+  aspect-ratio: 1;
+}
+
+button:hover {
+  background: #9575CD;
+}
+
+#equals {
+  color: #fff;
+  background: #673AB7;
+  font-weight: bold;
+}
+
+#equals:hover {
+  background: #7E57C2;
+}
+
+.clear {
+  background: #ff4c4c;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background 0.2s;
+}
+
+.clear:hover {
+  background: #ff6b6b;
+}
+
+@media (max-width: 480px) {
+  .calculator {
+    padding: 15px;
+  }
+
+  #display {
+    font-size: 26px;
+    height: 60px;
+    padding: 10x 14px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 350px) {
+  #display {
+    font-size: 24px;
+    height: 55px;
+    padding: 8px 12px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: #311B92;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  font-size: 14px;
+  font-style: italic;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer img {
+  width: 20px;
+  height: 20px;
+}
